@@ -1,7 +1,7 @@
-package Ducks;
+package strategy.Ducks;
 
-import Flying.FlyBehavior;
-import Quacking.QuackBehavior;
+import strategy.Flying.FlyBehavior;
+import strategy.Quacking.QuackBehavior;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;

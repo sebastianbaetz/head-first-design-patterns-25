@@ -1,10 +1,10 @@
-import Ducks.Duck;
-import Ducks.MallardDuck;
-import Ducks.ModelDuck;
-import Flying.FlyRocketPowered;
+package strategy;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import strategy.Ducks.Duck;
+import strategy.Ducks.MallardDuck;
+import strategy.Ducks.ModelDuck;
+import strategy.Flying.FlyRocketPowered;
+
 public class MiniDuckSimulator {
     public static void main(String[] args) {
         Duck mallard = new MallardDuck();

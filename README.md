@@ -1,6 +1,28 @@
 Head First Design Patterns (May 2025 - )
 
-Chapter 1: Intro
+
+Chapter 2: Observer Pattern
+* This one is very common, IIRC JS internals use this a lot?
+* Subscribers are called OBSERVERS
+* Publisher(s) are called SUBJECT(s)
+* Like an email list (sure am creative with this example)
+* Formal definition: a one-to-many dependency between objects so that when one object changes state, all of its dependants are notified and updated automatically
+* A sort-of base for the publish subscribe pattern which is more complex
+* Great example of loose coupling - a wonderful thing to work towards
+* Implementation detail whether we push or pull data. Observer versus observable. Pull is technically more correct
+* Subjects update Observers using a common interface
+* Any observer can participate as long as they implement the common interface
+* Observers are loosely coupled, the subject knows nothing about them other than that they implement the interface
+* DESIGN PRINCIPLE CHALLENGE
+  * What varies and what stays the same?
+    * State values and the pool of observers
+  * Program to an interface, not an implementation
+    * That is why we use the Observer, Subject, and DisplayElement interfaces :)
+  * Favor composition over inheritance
+    * Can compose all observers with their subject. Set at runtime
+
+
+Chapter 1: Intro, Strategy pattern
 * THE BASIS OF DESIGN PATTERNS - Take what varies and encapsulate it so that it won’t affect the rest of your code.
     * Fewer unintended consequences form code changes and more flexibility in your systems
     * You can alter or extend the varied parts without affecting the parts that do not vary
